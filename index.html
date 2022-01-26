@@ -6,154 +6,283 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Folio</title>
-  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header class="haeder">
-    <div class="header__inner">
-      <div class="header__item row middle between">
-        <h2 class="header__logo">folio.</h2>
-        <div class="header__nav">
-          <nav class="site__nav">
-            <ul class="nav__manu row middle">
-              <li class="nav__list cre-ho-lis">
-                <p class="nav__list-t row middle">creative demos<i class='bx bx-chevron-down'></i></p>
-                <ul class="cre__manu">
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">designer 01</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">designer 02</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">devloper 01</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">devloper 02</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">agency 01</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">agency 02</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">photography 01</a>
-                  </li>
-                  <li class="cre__list">
-                    <a class="cre__link" href="#">photography 02</a>
-                  </li>
-                </ul>
-              </li>
+  <!-- HEADER PART  -->
 
-              <li class="nav__list pag-ho-lis">
-                <p class="nav__list-t row middle">pages<i class='bx bx-chevron-down'></i></p>
-                <ul class="pa-menu port-hov-lis-one">
-                  <li class="pa__list-t">
-                    <p class="pa__list port-hov-lis row middle">portfolio<i class='bx bx-chevron-right'></i></p>
-                    <ul class="port-hov-menu">
-                      <li class="port__ho-lis">
-                        <p class="port__list">details 01<i class='bx bx-chevron-right'></i></p>
-                        <ul class="hover__manu">
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">masonry style</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">masonry grid 2</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">masonry grid 3 fluid</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">masonry grid 3</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">masonry grid 4 fluid</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">masonry grid 4</a>
-                          </li>
-                        </ul>
+  <header id="site-header">
+    <div class="row middle between">
+      <h1 class="none">folio</h1>
+      <div>
+        <a class="header-link" href="#">
+          <h2 class="head-title">folio.</h2>
+        </a>
+      </div>
+      <nav class="head-nav">
+        <ul class="row middle nav-list">
+          <li class="nav-item hover-item">
+            <p class="row  nav-page">creative demos <i class='bx bx-chevron-down'></i></p>
+            <div class="box-page">
+              <ul class="drop-menu-list">
+                <li class="page-items">designer 01</li>
+                <li class="page-items">designer 02</li>
+                <li class="page-items">designer 01</li>
+                <li class="page-items">designer 02</li>
+                <li class="page-items">agency 01</li>
+                <li class="page-items">agency 02</li>
+                <li class="page-items">photography 01</li>
+                <li class="page-items">photography 02</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item hover-item">
+            <p class="row middle">pages <i class='bx bx-chevron-down'></i></p>
+            <div class="box-page second-box-page">
+              <ul class="drop-menu-list">
+                <li class="page-items portfolio-item">
+                  <p class="portfolio-text">portfolio <i class='bx bx-chevron-right'></i></p>
+
+                  <div class="second-box-page third-box-page">
+                    <ul class="drop-menu-list">
+                      <li class="page-items grid-style-text">
+                        <p class="masonry-text">masonry style <i class='bx bxs-chevron-right'></i></p>
+                        <div class="last-box-page">
+                          <ul class="drop-menu-list">
+                            <li class="page-items">masonry grid 2</li>
+                            <li class="page-items">masonry grid 3 fluid</li>
+                            <li class="page-items">masonry grid 3</li>
+                            <li class="page-items">masonry grid 4 fluid</li>
+                            <li class="page-items">masonry grid 4</li>
+                          </ul>
+                        </div>
                       </li>
 
-                      <li class="port__list">
-                        details 02<i class='bx bx-chevron-right'></i>
-                        <ul class="hover__manu">
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">grid style</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">grid style 2</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">grid style 3</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">grid style 3 fluid</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">grid style 4</a>
-                          </li>
-                          <li class="hover__list">
-                            <a class="hover__link" href="#">grid style 4 fluid</a>
-                          </li>
-                        </ul>
+                      <li class="page-items grid-child-text">
+                        <p class="grid-style-text">grid style <i class='bx bxs-chevron-right'></i></p>
+
+                        <div class="last-box-page grid-box-page">
+                          <ul class="drop-menu-list">
+                            <li class="page-items">grid style 2</li>
+                            <li class="page-items">grid style 3</li>
+                            <li class="page-items">grid style 3 fluid</li>
+                            <li class="page-items">grid style 4</li>
+                            <li class="page-items">grid style 4 fluid</li>
+                          </ul>
+                        </div>
                       </li>
                     </ul>
-                  </li>
+                  </div>
+                </li>
 
-                  <li class="pa__list-t">
-                    <p class="pa__list port-hov-lis row middle">portfolio details<i class='bx bx-chevron-right'></i></p>
-                    <!-- <ul class="hover__manu">
-                      <li class="hover__list">
-                        <a class="hover__link" href="#">details 01</a>
-                      </li>
-                      <li class="hover__list">
-                        <a class="hover__link" href="#">details 02</a>
-                      </li>
-                    </ul> -->
-                  </li>
+                <li class="page-items">
+                  <p class="details-text">portfolio details <i class='bx bx-chevron-right'></i></p>
 
-                  <li class="pa__list">
-                    <a class="pa__list-t" href="#">about</a>
-                  </li>
-                  <li class="pa__list">
-                    <a class="pa__list-t" href="#">contact</a>
-                  </li>
-                </ul>
-              </li>
+                  <div class="third-box-page fourth-box">
+                    <ul class="drop-menu-list">
+                      <li class="page-items details-text first-detail">details 01</li>
+                      <li class="page-items details-text">details 02</li>
+                    </ul>
+                  </div>
+                </li>
 
-              <li class="nav__lis">
-                <a class="nav__list" href="#">about me.</a>
-              </li>
-              <li class="nav__lis">
-                <a class="nav__list" href="#">contact.</a>
-              </li>
-              <li class="nav__lis">
-                <a class="nav__list" href="#">support</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+                <li class="page-items designer-text">designer 01</li>
+                <li class="page-items designer-text">designer 02</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-links" href="#">about me.</a></li>
+          <li class="nav-item"><a class="nav-links" href="#">contact.</a></li>
+          <li class="nav-item"><a class="nav-links" href="#">support</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+  <!-- MAIN PART  -->
 
+  <main class="main">
+    <section class="img">
+      <div class="container">
+        <div class="title-div row middle between">
+          <div>
+            <p class="p">ILLUSTRATOR, GRAPHIC DESIGNER, TRAVELER</p>
+            <h2 class="title-l">I design digital crafts for clients.</h2>
+            <div>
+              <button class="btn wors row middle">explore works <i class='bx bx-right-arrow-alt'
+                  style='color:#ffffff'></i></button>
+            </div>
+          </div>
+          <div class="button-div">
+            <img
+              src="https://folio-next-live.netlify.app/_next/static/images/portrait-1-4db518f05f5503adba2bdd0803e1352e.png"
+              alt="img" width="450" height="500">
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="grid-section">
+      <div class="grid-title">
+        <div class="all-titles container row middle">
+          <h3 class="title-brand mane">ALL WORKS</h3>
+          <h3 class="title-brand">BRANDING</h3>
+          <h3 class="title-brand">UX DESIGN</h3>
+          <h3 class="title-brand">PHOTOGRAPHY</h3>
+        </div>
+      </div>
 
+      <div class="grid-div">
+        <ul class="grid-box">
+          <li class="box">
+            <div class="hover-grid-list">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list2">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list2">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list3">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list3">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list3">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list3">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list2">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+          <li class="box">
+            <div class="hover-grid-list2">
+              <div class="grid-item">
+                <p class="web-p">WEB</p>
+                <h4 class="Ped">Perfumed</h4>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <section class="lets">
+      <div class="container">
+        <div class="have">
+          <p class="tttext">AVAILABLE FOR FREELANCE PROJECTS</p>
+          <h3 class="do">Do you have illustration project? Let's talk.</h3>
+          <button class="btn talk row middle"><i class='bx bx-message-rounded'></i> Let's talk now </button>
+          <p class="reseved">© 2020 ALL RIGHT RESEVED</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- <button class="light" id="modeBtn">Dark mode</button> -->
+    <div class="change-mode-btn">
+      <div class="left-arrow-wrapper">
+        <button class="left-btn" id="leftBtn"><i class='bx bx-chevron-left'></i></button>
+      </div>
 
+      <div class="hide-version" id="hideContent">
+        <button class="close" id="closeBtn"><i class='bx bx-chevron-right'></i></button>
+        <h4 class="change-title">Change version</h4>
+        <div class="row button-change">
+          <button class="change-btn first-button" id="lightBtn">Light</button>
+          <button class="change-btn second-button" id="darkBtn">Dark</button>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="js/main.js"></script>
 </body>

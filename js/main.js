@@ -1,20 +1,16 @@
-document.getElementById('modeBtn').addEventListener('click', function() {
-  // document.getElementById('lig-dark').classList.toggle('dark');
-  document.body.classList.toggle('dark');
+let openBtn = document.getElementById('leftBtn');
+let closeButton = document.getElementById('closeBtn');
+let hideVersion = document.getElementById('hideContent');
+
+openBtn.addEventListener('click', function(){
+  hideVersion.classList.add('show');
 })
-
-
-
-
-// let a = 0;
-// document.getElementById('modeBtn').addEventListener('click', function () {
-//   // document.getElementById('header').classList.toggle('dark');
-//   document.body.classList.toggle('dark');
-//   if (a == 0) {
-//   //   this.textContent = 'Light mode';
-//   //   a++;
-//   // } else {
-//   //   this.textContent = 'Dark mode';
-//   //   a = 0;
-//   }
-// });
+closeButton.addEventListener('click', function(){
+  hideVersion.classList.remove('show');
+})
+document.getElementById('darkBtn').addEventListener('click', function(){
+  document.body.classList.add('dark');
+})
+document.getElementById('lightBtn').addEventListener('click', function(){
+  document.body.classList.remove('dark');
+})
