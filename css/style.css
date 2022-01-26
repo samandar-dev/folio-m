@@ -7,9 +7,356 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
+.dark {
+  --background-color: rgb(22, 28, 45);
+  --text-color: #fff;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #161c2d;
+  --bg-colorr: #495fef;
+  --bg-colorrr: #56b381;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__item {
+  position: fixed;
+  padding: 10px 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  line-height: 1.42;
+  color: var(--text-color);
+}
+
+.nav__manu {
+  list-style-type: none;
+}
+
+.nav__list {
+  position: relative;
+  padding: 18px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.4s ease 0s;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: lowercase;
+  z-index: 10;
+}
+
+.cre-ho-lis:hover .bx-chevron-down {
+  transform: rotate(-180deg);
+  transition: all 0.4s ease 0s;
+}
+
+.nav__list:hover {
+  color: rgb(73, 95, 239);
+}
+
+.bx {
+  margin-left: 10px;
+  position: relative;
+  font-size: 18px;
+  transition: all 0.4s ease 0s;
+  font-weight: 900;
+  line-height: 14px;
+}
+
+.cre__manu {
+  list-style-type: none;
+  position: absolute;
+  width: 227px;
+  height: auto;
+  top: 140%;
+  left: -50px;
+
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0px;
+
+  border-top: 3px solid rgb(73, 95, 239);
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+  opacity: 0;
+  z-index: -5;
+}
+
+
+.cre__list {
+  position: relative;
+  padding: 10px 30px;
+}
+
+.cre__link {
+  text-decoration: none;
+  color: rgb(22, 28, 45);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: lowercase;
+  transition: all 0.2s ease;
+}
+
+.cre__link:hover {
+  color: rgb(73, 95, 239);
+  transition: all 0.2s ease;
+}
+
+.cre-ho-lis:hover .cre__manu {
+  top: 100%;
+  opacity: 1;
+  z-index: 10;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.pa-menu {
+  list-style-type: none;
+  position: absolute;
+  width: 227px;
+  height: auto;
+  top: 140%;
+  left: -50px;
+
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0px;
+
+  border-top: 3px solid rgb(73, 95, 239);
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+  opacity: 0;
+  z-index: -5;
+}
+
+.pag-ho-lis:hover .pa-menu {
+  top: 100%;
+  opacity: 1;
+  z-index: 10;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.pa__list{
+  position: relative;
+  padding: 10px 30px;
+}
+
+.pa__list-t{
+  text-decoration: none;
+  color: rgb(22, 28, 45);
+  transition: all 0.4s ease 0s;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: lowercase;
+  z-index: 10;
+}
+
+.pa__list-t:hover{
+  color: rgb(73, 95, 239);
+  transition: all 0.2s ease;
+}
+
+.port-hov-lis:hover .bx-chevron-right{
+  transform: rotate(180deg);
+  transition: all 0.4s ease 0s;
+}
+
+.port-hov-menu{
+  list-style-type: none;
+  position: absolute;
+  width: 227px;
+  height: auto;
+  top: 20%;
+  left: -227px;
+
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0px;
+
+  border-top: 3px solid rgb(73, 95, 239);
+  border-radius: 0px 0px 10px 10px;
+  display: none;
+  z-index: -5;
+}
+
+.port-hov-lis-one:hover .port-hov-menu{
+  display: block;
+  top: 10%;
+  z-index: 10;
+  transition: all 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+/*
+.hover__box {
+  position: absolute;
+  top: 140%;
+  left: -55px;
+  width: 227px;
+  height: auto;
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 15px 0px;
+  z-index: 99;
+  transition: all 0.5s ease;
+
+  border-top: 3px solid rgb(73, 95, 239);
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.ho-list-two {
+  left: -125px;
+}
+
+.hover__manu {
+  list-style-type: none;
+}
+
+.menu_ho-box {
+  position: absolute;
+  top: 10%;
+  left: -250px;
+  width: 227px;
+  height: auto;
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 15px 0px;
+  z-index: 99;
+  transition: all 0.5s ease;
+
+  border-top: 3px solid rgb(60, 163, 0);
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu_ho-box-two {
+  position: absolute;
+  top: 30%;
+  left: -250px;
+  width: 227px;
+  height: auto;
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 15px 0px;
+  z-index: 99;
+  transition: all 0.5s ease;
+
+  border-top: 3px solid rgb(60, 163, 0);
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list_ho-box {
+  position: absolute;
+  top: 20%;
+  left: -250px;
+  width: 227px;
+  height: auto;
+  box-shadow: rgb(65 62 101 / 30%) 0px 52px 54px;
+  background-color: rgb(255, 255, 255);
+
+  padding: 15px 0px;
+  z-index: 99;
+  transition: all 0.5s ease;
+
+  border-top: 3px solid rgb(60, 163, 0);
+  border-radius: 0px 0px 10px 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.m-l-h-b-two {
+  top: 50%;
+  left: -250px;
+}
+
+.nav-ho-list:hover .hover__box {
+  display: block;
+  top: 100%;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.menu-hover-list:hover .menu_ho-box {
+  transition: all 0.5s ease;
+  left: -227px;
+  display: block;
+}
+
+.menu-hover-list:hover .menu_ho-box-two {
+  display: block;
+  left: -227px;
+  transition: all 0.5s ease;
+}
+
+.menu-ho-list-li:hover .menu-list_ho-box {
+  display: block;
+  left: -227px;
+  transition: all 0.5s ease;
+}
+
+.nav-ho-list:hover .bx-chevron-down {
+  transform: rotate(-180deg);
+  transition: 0.4s ease 0s, top 0.4s ease 0s;
+}
+
+.hover__list:hover .bx-r {
+  transform: rotate(180deg);
+  transition: 0.4s ease 0s, top 0.4s ease 0s;
+}
+
+.hover__list {
+  padding: 10px 30px;
+}
+
+.hover__link {
+  text-decoration: none;
+  transition: all 0.4s ease 0s;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: rgb(22, 28, 45);
+}
+
+.hover__listt:hover .bx-rr {
+  transform: rotate(180deg);
+  transition: 0.4s ease 0s, top 0.4s ease 0s;
+} */
